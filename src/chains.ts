@@ -91,11 +91,7 @@ const MGB: Currency = {
   symbol: 'MGB',
   decimals: 18,
 }
-const ELIZA: Currency = {
-  name: 'Eliza',
-  symbol: 'ELIZA',
-  decimals: 18,
-}
+
 const CHAIN_INFORMATION = new Map<number, ChainInformation | ChainType>([
   [
     1,
@@ -560,13 +556,25 @@ const CHAIN_INFORMATION = new Map<number, ChainInformation | ChainType>([
     9867,
     {
       id: 9867,
-      nativeCurrency: ELIZA,
+      nativeCurrency: MGB,
       type: 'testnet',
-      fullName: 'Eliza Testnet',
-      shortName: 'Eliza',
+      fullName: 'MGB Testnet',
+      shortName: 'MGB',
       explorerUrl: `https://test-explorer.Mugambo.org/`,
       testnet: true,
     },
+  ],
+  [
+    2125,
+    {
+      id: 2125,
+      nativeCurrency: MGB,
+      type: 'MGB',
+      fullName: 'MGB Mainnet',
+      shortName: 'MGB',
+      explorerUrl: `https://explorer.Mugambo.org/`,
+      testnet: false,
+    }
   ],
 ])
 

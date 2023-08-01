@@ -1724,11 +1724,6 @@ var MGB = {
   symbol: 'MGB',
   decimals: 18
 };
-var ELIZA = {
-  name: 'Eliza',
-  symbol: 'ELIZA',
-  decimals: 18
-};
 var CHAIN_INFORMATION = /*#__PURE__*/new Map([[1, {
   id: 1,
   nativeCurrency: ETH,
@@ -2034,12 +2029,20 @@ var CHAIN_INFORMATION = /*#__PURE__*/new Map([[1, {
   testnet: true
 }], [9867, {
   id: 9867,
-  nativeCurrency: ELIZA,
+  nativeCurrency: MGB,
   type: 'testnet',
-  fullName: 'Eliza Testnet',
-  shortName: 'Eliza',
+  fullName: 'MGB Testnet',
+  shortName: 'MGB',
   explorerUrl: "https://test-explorer.Mugambo.org/",
   testnet: true
+}], [2125, {
+  id: 2125,
+  nativeCurrency: MGB,
+  type: 'MGB',
+  fullName: 'MGB Mainnet',
+  shortName: 'MGB',
+  explorerUrl: "https://explorer.Mugambo.org/",
+  testnet: false
 }]]);
 /**
  * This method checks whether a particular chain id is known.
